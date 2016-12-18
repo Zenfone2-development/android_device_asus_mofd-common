@@ -79,7 +79,10 @@ PRODUCT_PACKAGES += \
     pvr_drv_video
 
 PRODUCT_COPY_FILES += \
-    device/asus/mofd-common/powervr.ini:system/etc/powervr.ini
+    device/asus/mofd-common/powervr.ini:system/etc/powervr.ini \
+    frameworks/native/data/etc/android.hardware.vulkan.level-0.xml:system/etc/permissions/android.hardware.vulkan.level-0.xml \
+    frameworks/native/data/etc/android.hardware.vulkan.version-1_0_3.xml:system/etc/permissions/android.hardware.vulkan.version-1_0_3.xml
+
 
 # Factory reset protection
 ADDITIONAL_DEFAULT_PROPERTIES += \
